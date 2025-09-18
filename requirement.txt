@@ -3,4 +3,8 @@ pandas
 numpy
 scikit-learn
 imblearn
+bs4
 openpyxl
+flask
+memory_profiler
+requests

@@ -1,0 +1,1014 @@
+our lives easier when we need to determine a particular solution. To do
+this, we express the right-hand side of the equation system using the pivot
+columns, such that b=
+P
+i=1 λipi, where pi, i = 1,...,P, are the pivot
+columns. The λi are determined easiest if we start with the rightmost pivot
+column and work our way to the left.
+In the previous example, we would try to find λ1,λ2,λ3 so that
+λ1
+   
+1
+0
+0
+0
+   + λ2
+   
+1
+1
+0
+0
+   + λ3
+   
+−1
+−1
+1
+0
+   =
+   
+0
+−2
+1
+0
+   . (2.48)
+From here, we find relatively directly that λ3 = 1,λ2 =−1,λ1 = 2. When
+we put everything together, we must not forget the non-pivot columns
+for which we set the coefficients implicitly to 0. Therefore, we get the
+particular solution x= [2,0,−1,1,0]⊤
+. ♢
+Remark (Reduced Row Echelon Form). An equation system is in reduced row-echelon form (also: row-reduced echelon form or row canonical form) if
+It is in row-echelon form.
+Every pivot is 1.
+The pivot is the only nonzero entry in its column.
+♢
+The reduced row-echelon form will play an important role later in Sec-
+tion 2.3.3 because it allows us to determine the general solution of a sys-
+tem of linear equations in a straightforward way. Remark (Gaussian Elimination). Gaussian elimination is an algorithm that
+performs elementary transformations to bring a system of linear equations
+into reduced row-echelon form. ♢
+Example 2.7 (Reduced Row Echelon Form)
+Verify that the following matrix is in reduced row-echelon form (the pivots
+are in bold):
+A= 
+0 0 1 0 9
+1 3 0 0 3
+
+0 0 0 1−4
+. (2.49)
+The key idea for finding the solutions of Ax= 0 is to look at the non-
+pivot columns, which we will need to express as a (linear) combination of
+the pivot columns. The reduced row echelon form makes this relatively
+straightforward, and we express the non-pivot columns in terms of sums
+and multiples of the pivot columns that are on their left: The second col-
+umn is 3 times the first column (we can ignore the pivot columns on the
+right of the second column). Therefore, to obtain 0, we need to subtract
+our lives easier when we need to determine a particular solution. To do
+this, we express the right-hand side of the equation system using the pivot
+columns, such that b=
+P
+i=1 λipi, where pi, i = 1,...,P, are the pivot
+columns. The λi are determined easiest if we start with the rightmost pivot
+column and work our way to the left.
+In the previous example, we would try to find λ1,λ2,λ3 so that
+λ1
+   
+1
+0
+0
+0
+   + λ2
+   
+1
+1
+0
+0
+   + λ3
+   
+−1
+−1
+1
+0
+   =
+   
+0
+−2
+1
+0
+   . (2.48)
+From here, we find relatively directly that λ3 = 1,λ2 =−1,λ1 = 2. When
+we put everything together, we must not forget the non-pivot columns
+for which we set the coefficients implicitly to 0. Therefore, we get the
+particular solution x= [2,0,−1,1,0]⊤
+. ♢
+Remark (Reduced Row Echelon Form). An equation system is in reduced row-echelon form (also: row-reduced echelon form or row canonical form) if
+It is in row-echelon form.
+Every pivot is 1.
+The pivot is the only nonzero entry in its column.
+♢
+The reduced row-echelon form will play an important role later in Sec-
+tion 2.3.3 because it allows us to determine the general solution of a sys-
+tem of linear equations in a straightforward way. Remark (Gaussian Elimination). Gaussian elimination is an algorithm that
+performs elementary transformations to bring a system of linear equations
+into reduced row-echelon form. ♢
+Example 2.7 (Reduced Row Echelon Form)
+Verify that the following matrix is in reduced row-echelon form (the pivots
+are in bold):
+A= 
+0 0 1 0 9
+1 3 0 0 3
+
+0 0 0 1−4
+. (2.49)
+The key idea for finding the solutions of Ax= 0 is to look at the non-
+pivot columns, which we will need to express as a (linear) combination of
+the pivot columns. The reduced row echelon form makes this relatively
+straightforward, and we express the non-pivot columns in terms of sums
+and multiples of the pivot columns that are on their left: The second col-
+umn is 3 times the first column (we can ignore the pivot columns on the
+right of the second column). Therefore, to obtain 0, we need to subtract
+our lives easier when we need to determine a particular solution. To do
+this, we express the right-hand side of the equation system using the pivot
+columns, such that b=
+P
+i=1 λipi, where pi, i = 1,...,P, are the pivot
+columns. The λi are determined easiest if we start with the rightmost pivot
+column and work our way to the left.
+In the previous example, we would try to find λ1,λ2,λ3 so that
+λ1
+   
+1
+0
+0
+0
+   + λ2
+   
+1
+1
+0
+0
+   + λ3
+   
+−1
+−1
+1
+0
+   =
+   
+0
+−2
+1
+0
+   . (2.48)
+From here, we find relatively directly that λ3 = 1,λ2 =−1,λ1 = 2. When
+we put everything together, we must not forget the non-pivot columns
+for which we set the coefficients implicitly to 0. Therefore, we get the
+particular solution x= [2,0,−1,1,0]⊤
+. ♢
+Remark (Reduced Row Echelon Form). An equation system is in reduced row-echelon form (also: row-reduced echelon form or row canonical form) if
+It is in row-echelon form.
+Every pivot is 1.
+The pivot is the only nonzero entry in its column.
+♢
+The reduced row-echelon form will play an important role later in Sec-
+tion 2.3.3 because it allows us to determine the general solution of a sys-
+tem of linear equations in a straightforward way. Remark (Gaussian Elimination). Gaussian elimination is an algorithm that
+performs elementary transformations to bring a system of linear equations
+into reduced row-echelon form. ♢
+Example 2.7 (Reduced Row Echelon Form)
+Verify that the following matrix is in reduced row-echelon form (the pivots
+are in bold):
+A= 
+0 0 1 0 9
+1 3 0 0 3
+
+0 0 0 1−4
+. (2.49)
+The key idea for finding the solutions of Ax= 0 is to look at the non-
+pivot columns, which we will need to express as a (linear) combination of
+the pivot columns. The reduced row echelon form makes this relatively
+straightforward, and we express the non-pivot columns in terms of sums
+and multiples of the pivot columns that are on their left: The second col-
+umn is 3 times the first column (we can ignore the pivot columns on the
+right of the second column). Therefore, to obtain 0, we need to subtract
+our lives easier when we need to determine a particular solution. To do
+this, we express the right-hand side of the equation system using the pivot
+columns, such that b=
+P
+i=1 λipi, where pi, i = 1,...,P, are the pivot
+columns. The λi are determined easiest if we start with the rightmost pivot
+column and work our way to the left.
+In the previous example, we would try to find λ1,λ2,λ3 so that
+λ1
+   
+1
+0
+0
+0
+   + λ2
+   
+1
+1
+0
+0
+   + λ3
+   
+−1
+−1
+1
+0
+   =
+   
+0
+−2
+1
+0
+   . (2.48)
+From here, we find relatively directly that λ3 = 1,λ2 =−1,λ1 = 2. When
+we put everything together, we must not forget the non-pivot columns
+for which we set the coefficients implicitly to 0. Therefore, we get the
+particular solution x= [2,0,−1,1,0]⊤
+. ♢
+Remark (Reduced Row Echelon Form). An equation system is in reduced row-echelon form (also: row-reduced echelon form or row canonical form) if
+It is in row-echelon form.
+Every pivot is 1.
+The pivot is the only nonzero entry in its column.
+♢
+The reduced row-echelon form will play an important role later in Sec-
+tion 2.3.3 because it allows us to determine the general solution of a sys-
+tem of linear equations in a straightforward way. Remark (Gaussian Elimination). Gaussian elimination is an algorithm that
+performs elementary transformations to bring a system of linear equations
+into reduced row-echelon form. ♢
+Example 2.7 (Reduced Row Echelon Form)
+Verify that the following matrix is in reduced row-echelon form (the pivots
+are in bold):
+A= 
+0 0 1 0 9
+1 3 0 0 3
+
+0 0 0 1−4
+. (2.49)
+The key idea for finding the solutions of Ax= 0 is to look at the non-
+pivot columns, which we will need to express as a (linear) combination of
+the pivot columns. The reduced row echelon form makes this relatively
+straightforward, and we express the non-pivot columns in terms of sums
+and multiples of the pivot columns that are on their left: The second col-
+umn is 3 times the first column (we can ignore the pivot columns on the
+right of the second column). Therefore, to obtain 0, we need to subtract
+our lives easier when we need to determine a particular solution. To do
+this, we express the right-hand side of the equation system using the pivot
+columns, such that b=
+P
+i=1 λipi, where pi, i = 1,...,P, are the pivot
+columns. The λi are determined easiest if we start with the rightmost pivot
+column and work our way to the left.
+In the previous example, we would try to find λ1,λ2,λ3 so that
+λ1
+   
+1
+0
+0
+0
+   + λ2
+   
+1
+1
+0
+0
+   + λ3
+   
+−1
+−1
+1
+0
+   =
+   
+0
+−2
+1
+0
+   . (2.48)
+From here, we find relatively directly that λ3 = 1,λ2 =−1,λ1 = 2. When
+we put everything together, we must not forget the non-pivot columns
+for which we set the coefficients implicitly to 0. Therefore, we get the
+particular solution x= [2,0,−1,1,0]⊤
+. ♢
+Remark (Reduced Row Echelon Form). An equation system is in reduced row-echelon form (also: row-reduced echelon form or row canonical form) if
+It is in row-echelon form.
+Every pivot is 1.
+The pivot is the only nonzero entry in its column.
+♢
+The reduced row-echelon form will play an important role later in Sec-
+tion 2.3.3 because it allows us to determine the general solution of a sys-
+tem of linear equations in a straightforward way. Remark (Gaussian Elimination). Gaussian elimination is an algorithm that
+performs elementary transformations to bring a system of linear equations
+into reduced row-echelon form. ♢
+Example 2.7 (Reduced Row Echelon Form)
+Verify that the following matrix is in reduced row-echelon form (the pivots
+are in bold):
+A= 
+0 0 1 0 9
+1 3 0 0 3
+
+0 0 0 1−4
+. (2.49)
+The key idea for finding the solutions of Ax= 0 is to look at the non-
+pivot columns, which we will need to express as a (linear) combination of
+the pivot columns. The reduced row echelon form makes this relatively
+straightforward, and we express the non-pivot columns in terms of sums
+and multiples of the pivot columns that are on their left: The second col-
+umn is 3 times the first column (we can ignore the pivot columns on the
+right of the second column). Therefore, to obtain 0, we need to subtract
+our lives easier when we need to determine a particular solution. To do
+this, we express the right-hand side of the equation system using the pivot
+columns, such that b=
+P
+i=1 λipi, where pi, i = 1,...,P, are the pivot
+columns. The λi are determined easiest if we start with the rightmost pivot
+column and work our way to the left.
+In the previous example, we would try to find λ1,λ2,λ3 so that
+λ1
+   
+1
+0
+0
+0
+   + λ2
+   
+1
+1
+0
+0
+   + λ3
+   
+−1
+−1
+1
+0
+   =
+   
+0
+−2
+1
+0
+   . (2.48)
+From here, we find relatively directly that λ3 = 1,λ2 =−1,λ1 = 2. When
+we put everything together, we must not forget the non-pivot columns
+for which we set the coefficients implicitly to 0. Therefore, we get the
+particular solution x= [2,0,−1,1,0]⊤
+. ♢
+Remark (Reduced Row Echelon Form). An equation system is in reduced row-echelon form (also: row-reduced echelon form or row canonical form) if
+It is in row-echelon form.
+Every pivot is 1.
+The pivot is the only nonzero entry in its column.
+♢
+The reduced row-echelon form will play an important role later in Sec-
+tion 2.3.3 because it allows us to determine the general solution of a sys-
+tem of linear equations in a straightforward way. Remark (Gaussian Elimination). Gaussian elimination is an algorithm that
+performs elementary transformations to bring a system of linear equations
+into reduced row-echelon form. ♢
+Example 2.7 (Reduced Row Echelon Form)
+Verify that the following matrix is in reduced row-echelon form (the pivots
+are in bold):
+A= 
+0 0 1 0 9
+1 3 0 0 3
+
+0 0 0 1−4
+. (2.49)
+The key idea for finding the solutions of Ax= 0 is to look at the non-
+pivot columns, which we will need to express as a (linear) combination of
+the pivot columns. The reduced row echelon form makes this relatively
+straightforward, and we express the non-pivot columns in terms of sums
+and multiples of the pivot columns that are on their left: The second col-
+umn is 3 times the first column (we can ignore the pivot columns on the
+right of the second column). Therefore, to obtain 0, we need to subtractour lives easier when we need to determine a particular solution. To do
+this, we express the right-hand side of the equation system using the pivot
+columns, such that b=
+P
+i=1 λipi, where pi, i = 1,...,P, are the pivot
+columns. The λi are determined easiest if we start with the rightmost pivot
+column and work our way to the left.
+In the previous example, we would try to find λ1,λ2,λ3 so that
+λ1
+   
+1
+0
+0
+0
+   + λ2
+   
+1
+1
+0
+0
+   + λ3
+   
+−1
+−1
+1
+0
+   =
+   
+0
+−2
+1
+0
+   . (2.48)
+From here, we find relatively directly that λ3 = 1,λ2 =−1,λ1 = 2. When
+we put everything together, we must not forget the non-pivot columns
+for which we set the coefficients implicitly to 0. Therefore, we get the
+particular solution x= [2,0,−1,1,0]⊤
+. ♢
+Remark (Reduced Row Echelon Form). An equation system is in reduced row-echelon form (also: row-reduced echelon form or row canonical form) if
+It is in row-echelon form.
+Every pivot is 1.
+The pivot is the only nonzero entry in its column.
+♢
+The reduced row-echelon form will play an important role later in Sec-
+tion 2.3.3 because it allows us to determine the general solution of a sys-
+tem of linear equations in a straightforward way. Remark (Gaussian Elimination). Gaussian elimination is an algorithm that
+performs elementary transformations to bring a system of linear equations
+into reduced row-echelon form. ♢
+Example 2.7 (Reduced Row Echelon Form)
+Verify that the following matrix is in reduced row-echelon form (the pivots
+are in bold):
+A= 
+0 0 1 0 9
+1 3 0 0 3
+
+0 0 0 1−4
+. (2.49)
+The key idea for finding the solutions of Ax= 0 is to look at the non-
+pivot columns, which we will need to express as a (linear) combination of
+the pivot columns. The reduced row echelon form makes this relatively
+straightforward, and we express the non-pivot columns in terms of sums
+and multiples of the pivot columns that are on their left: The second col-
+umn is 3 times the first column (we can ignore the pivot columns on the
+right of the second column). Therefore, to obtain 0, we need to subtractour lives easier when we need to determine a particular solution. To do
+this, we express the right-hand side of the equation system using the pivot
+columns, such that b=
+P
+i=1 λipi, where pi, i = 1,...,P, are the pivot
+columns. The λi are determined easiest if we start with the rightmost pivot
+column and work our way to the left.
+In the previous example, we would try to find λ1,λ2,λ3 so that
+λ1
+   
+1
+0
+0
+0
+   + λ2
+   
+1
+1
+0
+0
+   + λ3
+   
+−1
+−1
+1
+0
+   =
+   
+0
+−2
+1
+0
+   . (2.48)
+From here, we find relatively directly that λ3 = 1,λ2 =−1,λ1 = 2. When
+we put everything together, we must not forget the non-pivot columns
+for which we set the coefficients implicitly to 0. Therefore, we get the
+particular solution x= [2,0,−1,1,0]⊤
+. ♢
+Remark (Reduced Row Echelon Form). An equation system is in reduced row-echelon form (also: row-reduced echelon form or row canonical form) if
+It is in row-echelon form.
+Every pivot is 1.
+The pivot is the only nonzero entry in its column.
+♢
+The reduced row-echelon form will play an important role later in Sec-
+tion 2.3.3 because it allows us to determine the general solution of a sys-
+tem of linear equations in a straightforward way. Remark (Gaussian Elimination). Gaussian elimination is an algorithm that
+performs elementary transformations to bring a system of linear equations
+into reduced row-echelon form. ♢
+Example 2.7 (Reduced Row Echelon Form)
+Verify that the following matrix is in reduced row-echelon form (the pivots
+are in bold):
+A= 
+0 0 1 0 9
+1 3 0 0 3
+
+0 0 0 1−4
+. (2.49)
+The key idea for finding the solutions of Ax= 0 is to look at the non-
+pivot columns, which we will need to express as a (linear) combination of
+the pivot columns. The reduced row echelon form makes this relatively
+straightforward, and we express the non-pivot columns in terms of sums
+and multiples of the pivot columns that are on their left: The second col-
+umn is 3 times the first column (we can ignore the pivot columns on the
+right of the second column). Therefore, to obtain 0, we need to subtractour lives easier when we need to determine a particular solution. To do
+this, we express the right-hand side of the equation system using the pivot
+columns, such that b=
+P
+i=1 λipi, where pi, i = 1,...,P, are the pivot
+columns. The λi are determined easiest if we start with the rightmost pivot
+column and work our way to the left.
+In the previous example, we would try to find λ1,λ2,λ3 so that
+λ1
+   
+1
+0
+0
+0
+   + λ2
+   
+1
+1
+0
+0
+   + λ3
+   
+−1
+−1
+1
+0
+   =
+   
+0
+−2
+1
+0
+   . (2.48)
+From here, we find relatively directly that λ3 = 1,λ2 =−1,λ1 = 2. When
+we put everything together, we must not forget the non-pivot columns
+for which we set the coefficients implicitly to 0. Therefore, we get the
+particular solution x= [2,0,−1,1,0]⊤
+. ♢
+Remark (Reduced Row Echelon Form). An equation system is in reduced row-echelon form (also: row-reduced echelon form or row canonical form) if
+It is in row-echelon form.
+Every pivot is 1.
+The pivot is the only nonzero entry in its column.
+♢
+The reduced row-echelon form will play an important role later in Sec-
+tion 2.3.3 because it allows us to determine the general solution of a sys-
+tem of linear equations in a straightforward way. Remark (Gaussian Elimination). Gaussian elimination is an algorithm that
+performs elementary transformations to bring a system of linear equations
+into reduced row-echelon form. ♢
+Example 2.7 (Reduced Row Echelon Form)
+Verify that the following matrix is in reduced row-echelon form (the pivots
+are in bold):
+A= 
+0 0 1 0 9
+1 3 0 0 3
+
+0 0 0 1−4
+. (2.49)
+The key idea for finding the solutions of Ax= 0 is to look at the non-
+pivot columns, which we will need to express as a (linear) combination of
+the pivot columns. The reduced row echelon form makes this relatively
+straightforward, and we express the non-pivot columns in terms of sums
+and multiples of the pivot columns that are on their left: The second col-
+umn is 3 times the first column (we can ignore the pivot columns on the
+right of the second column). Therefore, to obtain 0, we need to subtractour lives easier when we need to determine a particular solution. To do
+this, we express the right-hand side of the equation system using the pivot
+columns, such that b=
+P
+i=1 λipi, where pi, i = 1,...,P, are the pivot
+columns. The λi are determined easiest if we start with the rightmost pivot
+column and work our way to the left.
+In the previous example, we would try to find λ1,λ2,λ3 so that
+λ1
+   
+1
+0
+0
+0
+   + λ2
+   
+1
+1
+0
+0
+   + λ3
+   
+−1
+−1
+1
+0
+   =
+   
+0
+−2
+1
+0
+   . (2.48)
+From here, we find relatively directly that λ3 = 1,λ2 =−1,λ1 = 2. When
+we put everything together, we must not forget the non-pivot columns
+for which we set the coefficients implicitly to 0. Therefore, we get the
+particular solution x= [2,0,−1,1,0]⊤
+. ♢
+Remark (Reduced Row Echelon Form). An equation system is in reduced row-echelon form (also: row-reduced echelon form or row canonical form) if
+It is in row-echelon form.
+Every pivot is 1.
+The pivot is the only nonzero entry in its column.
+♢
+The reduced row-echelon form will play an important role later in Sec-
+tion 2.3.3 because it allows us to determine the general solution of a sys-
+tem of linear equations in a straightforward way. Remark (Gaussian Elimination). Gaussian elimination is an algorithm that
+performs elementary transformations to bring a system of linear equations
+into reduced row-echelon form. ♢
+Example 2.7 (Reduced Row Echelon Form)
+Verify that the following matrix is in reduced row-echelon form (the pivots
+are in bold):
+A= 
+0 0 1 0 9
+1 3 0 0 3
+
+0 0 0 1−4
+. (2.49)
+The key idea for finding the solutions of Ax= 0 is to look at the non-
+pivot columns, which we will need to express as a (linear) combination of
+the pivot columns. The reduced row echelon form makes this relatively
+straightforward, and we express the non-pivot columns in terms of sums
+and multiples of the pivot columns that are on their left: The second col-
+umn is 3 times the first column (we can ignore the pivot columns on the
+right of the second column). Therefore, to obtain 0, we need to subtractour lives easier when we need to determine a particular solution. To do
+this, we express the right-hand side of the equation system using the pivot
+columns, such that b=
+P
+i=1 λipi, where pi, i = 1,...,P, are the pivot
+columns. The λi are determined easiest if we start with the rightmost pivot
+column and work our way to the left.
+In the previous example, we would try to find λ1,λ2,λ3 so that
+λ1
+   
+1
+0
+0
+0
+   + λ2
+   
+1
+1
+0
+0
+   + λ3
+   
+−1
+−1
+1
+0
+   =
+   
+0
+−2
+1
+0
+   . (2.48)
+From here, we find relatively directly that λ3 = 1,λ2 =−1,λ1 = 2. When
+we put everything together, we must not forget the non-pivot columns
+for which we set the coefficients implicitly to 0. Therefore, we get the
+particular solution x= [2,0,−1,1,0]⊤
+. ♢
+Remark (Reduced Row Echelon Form). An equation system is in reduced row-echelon form (also: row-reduced echelon form or row canonical form) if
+It is in row-echelon form.
+Every pivot is 1.
+The pivot is the only nonzero entry in its column.
+♢
+The reduced row-echelon form will play an important role later in Sec-
+tion 2.3.3 because it allows us to determine the general solution of a sys-
+tem of linear equations in a straightforward way. Remark (Gaussian Elimination). Gaussian elimination is an algorithm that
+performs elementary transformations to bring a system of linear equations
+into reduced row-echelon form. ♢
+Example 2.7 (Reduced Row Echelon Form)
+Verify that the following matrix is in reduced row-echelon form (the pivots
+are in bold):
+A= 
+0 0 1 0 9
+1 3 0 0 3
+
+0 0 0 1−4
+. (2.49)
+The key idea for finding the solutions of Ax= 0 is to look at the non-
+pivot columns, which we will need to express as a (linear) combination of
+the pivot columns. The reduced row echelon form makes this relatively
+straightforward, and we express the non-pivot columns in terms of sums
+and multiples of the pivot columns that are on their left: The second col-
+umn is 3 times the first column (we can ignore the pivot columns on the
+right of the second column). Therefore, to obtain 0, we need to subtractour lives easier when we need to determine a particular solution. To do
+this, we express the right-hand side of the equation system using the pivot
+columns, such that b=
+P
+i=1 λipi, where pi, i = 1,...,P, are the pivot
+columns. The λi are determined easiest if we start with the rightmost pivot
+column and work our way to the left.
+In the previous example, we would try to find λ1,λ2,λ3 so that
+λ1
+   
+1
+0
+0
+0
+   + λ2
+   
+1
+1
+0
+0
+   + λ3
+   
+−1
+−1
+1
+0
+   =
+   
+0
+−2
+1
+0
+   . (2.48)
+From here, we find relatively directly that λ3 = 1,λ2 =−1,λ1 = 2. When
+we put everything together, we must not forget the non-pivot columns
+for which we set the coefficients implicitly to 0. Therefore, we get the
+particular solution x= [2,0,−1,1,0]⊤
+. ♢
+Remark (Reduced Row Echelon Form). An equation system is in reduced row-echelon form (also: row-reduced echelon form or row canonical form) if
+It is in row-echelon form.
+Every pivot is 1.
+The pivot is the only nonzero entry in its column.
+♢
+The reduced row-echelon form will play an important role later in Sec-
+tion 2.3.3 because it allows us to determine the general solution of a sys-
+tem of linear equations in a straightforward way. Remark (Gaussian Elimination). Gaussian elimination is an algorithm that
+performs elementary transformations to bring a system of linear equations
+into reduced row-echelon form. ♢
+Example 2.7 (Reduced Row Echelon Form)
+Verify that the following matrix is in reduced row-echelon form (the pivots
+are in bold):
+A= 
+0 0 1 0 9
+1 3 0 0 3
+
+0 0 0 1−4
+. (2.49)
+The key idea for finding the solutions of Ax= 0 is to look at the non-
+pivot columns, which we will need to express as a (linear) combination of
+the pivot columns. The reduced row echelon form makes this relatively
+straightforward, and we express the non-pivot columns in terms of sums
+and multiples of the pivot columns that are on their left: The second col-
+umn is 3 times the first column (we can ignore the pivot columns on the
+right of the second column). Therefore, to obtain 0, we need to subtractour lives easier when we need to determine a particular solution. To do
+this, we express the right-hand side of the equation system using the pivot
+columns, such that b=
+P
+i=1 λipi, where pi, i = 1,...,P, are the pivot
+columns. The λi are determined easiest if we start with the rightmost pivot
+column and work our way to the left.
+In the previous example, we would try to find λ1,λ2,λ3 so that
+λ1
+   
+1
+0
+0
+0
+   + λ2
+   
+1
+1
+0
+0
+   + λ3
+   
+−1
+−1
+1
+0
+   =
+   
+0
+−2
+1
+0
+   . (2.48)
+From here, we find relatively directly that λ3 = 1,λ2 =−1,λ1 = 2. When
+we put everything together, we must not forget the non-pivot columns
+for which we set the coefficients implicitly to 0. Therefore, we get the
+particular solution x= [2,0,−1,1,0]⊤
+. ♢
+Remark (Reduced Row Echelon Form). An equation system is in reduced row-echelon form (also: row-reduced echelon form or row canonical form) if
+It is in row-echelon form.
+Every pivot is 1.
+The pivot is the only nonzero entry in its column.
+♢
+The reduced row-echelon form will play an important role later in Sec-
+tion 2.3.3 because it allows us to determine the general solution of a sys-
+tem of linear equations in a straightforward way. Remark (Gaussian Elimination). Gaussian elimination is an algorithm that
+performs elementary transformations to bring a system of linear equations
+into reduced row-echelon form. ♢
+Example 2.7 (Reduced Row Echelon Form)
+Verify that the following matrix is in reduced row-echelon form (the pivots
+are in bold):
+A= 
+0 0 1 0 9
+1 3 0 0 3
+
+0 0 0 1−4
+. (2.49)
+The key idea for finding the solutions of Ax= 0 is to look at the non-
+pivot columns, which we will need to express as a (linear) combination of
+the pivot columns. The reduced row echelon form makes this relatively
+straightforward, and we express the non-pivot columns in terms of sums
+and multiples of the pivot columns that are on their left: The second col-
+umn is 3 times the first column (we can ignore the pivot columns on the
+right of the second column). Therefore, to obtain 0, we need to subtractour lives easier when we need to determine a particular solution. To do
+this, we express the right-hand side of the equation system using the pivot
+columns, such that b=
+P
+i=1 λipi, where pi, i = 1,...,P, are the pivot
+columns. The λi are determined easiest if we start with the rightmost pivot
+column and work our way to the left.
+In the previous example, we would try to find λ1,λ2,λ3 so that
+λ1
+   
+1
+0
+0
+0
+   + λ2
+   
+1
+1
+0
+0
+   + λ3
+   
+−1
+−1
+1
+0
+   =
+   
+0
+−2
+1
+0
+   . (2.48)
+From here, we find relatively directly that λ3 = 1,λ2 =−1,λ1 = 2. When
+we put everything together, we must not forget the non-pivot columns
+for which we set the coefficients implicitly to 0. Therefore, we get the
+particular solution x= [2,0,−1,1,0]⊤
+. ♢
+Remark (Reduced Row Echelon Form). An equation system is in reduced row-echelon form (also: row-reduced echelon form or row canonical form) if
+It is in row-echelon form.
+Every pivot is 1.
+The pivot is the only nonzero entry in its column.
+♢
+The reduced row-echelon form will play an important role later in Sec-
+tion 2.3.3 because it allows us to determine the general solution of a sys-
+tem of linear equations in a straightforward way. Remark (Gaussian Elimination). Gaussian elimination is an algorithm that
+performs elementary transformations to bring a system of linear equations
+into reduced row-echelon form. ♢
+Example 2.7 (Reduced Row Echelon Form)
+Verify that the following matrix is in reduced row-echelon form (the pivots
+are in bold):
+A= 
+0 0 1 0 9
+1 3 0 0 3
+
+0 0 0 1−4
+. (2.49)
+The key idea for finding the solutions of Ax= 0 is to look at the non-
+pivot columns, which we will need to express as a (linear) combination of
+the pivot columns. The reduced row echelon form makes this relatively
+straightforward, and we express the non-pivot columns in terms of sums
+and multiples of the pivot columns that are on their left: The second col-
+umn is 3 times the first column (we can ignore the pivot columns on the
+right of the second column). Therefore, to obtain 0, we need to subtractour lives easier when we need to determine a particular solution. To do
+this, we express the right-hand side of the equation system using the pivot
+columns, such that b=
+P
+i=1 λipi, where pi, i = 1,...,P, are the pivot
+columns. The λi are determined easiest if we start with the rightmost pivot
+column and work our way to the left.
+In the previous example, we would try to find λ1,λ2,λ3 so that
+λ1
+   
+1
+0
+0
+0
+   + λ2
+   
+1
+1
+0
+0
+   + λ3
+   
+−1
+−1
+1
+0
+   =
+   
+0
+−2
+1
+0
+   . (2.48)
+From here, we find relatively directly that λ3 = 1,λ2 =−1,λ1 = 2. When
+we put everything together, we must not forget the non-pivot columns
+for which we set the coefficients implicitly to 0. Therefore, we get the
+particular solution x= [2,0,−1,1,0]⊤
+. ♢
+Remark (Reduced Row Echelon Form). An equation system is in reduced row-echelon form (also: row-reduced echelon form or row canonical form) if
+It is in row-echelon form.
+Every pivot is 1.
+The pivot is the only nonzero entry in its column.
+♢
+The reduced row-echelon form will play an important role later in Sec-
+tion 2.3.3 because it allows us to determine the general solution of a sys-
+tem of linear equations in a straightforward way. Remark (Gaussian Elimination). Gaussian elimination is an algorithm that
+performs elementary transformations to bring a system of linear equations
+into reduced row-echelon form. ♢
+Example 2.7 (Reduced Row Echelon Form)
+Verify that the following matrix is in reduced row-echelon form (the pivots
+are in bold):
+A= 
+0 0 1 0 9
+1 3 0 0 3
+
+0 0 0 1−4
+. (2.49)
+The key idea for finding the solutions of Ax= 0 is to look at the non-
+pivot columns, which we will need to express as a (linear) combination of
+the pivot columns. The reduced row echelon form makes this relatively
+straightforward, and we express the non-pivot columns in terms of sums
+and multiples of the pivot columns that are on their left: The second col-
+umn is 3 times the first column (we can ignore the pivot columns on the
+right of the second column). Therefore, to obtain 0, we need to subtractour lives easier when we need to determine a particular solution. To do
+this, we express the right-hand side of the equation system using the pivot
+columns, such that b=
+P
+i=1 λipi, where pi, i = 1,...,P, are the pivot
+columns. The λi are determined easiest if we start with the rightmost pivot
+column and work our way to the left.
+In the previous example, we would try to find λ1,λ2,λ3 so that
+λ1
+   
+1
+0
+0
+0
+   + λ2
+   
+1
+1
+0
+0
+   + λ3
+   
+−1
+−1
+1
+0
+   =
+   
+0
+−2
+1
+0
+   . (2.48)
+From here, we find relatively directly that λ3 = 1,λ2 =−1,λ1 = 2. When
+we put everything together, we must not forget the non-pivot columns
+for which we set the coefficients implicitly to 0. Therefore, we get the
+particular solution x= [2,0,−1,1,0]⊤
+. ♢
+Remark (Reduced Row Echelon Form). An equation system is in reduced row-echelon form (also: row-reduced echelon form or row canonical form) if
+It is in row-echelon form.
+Every pivot is 1.
+The pivot is the only nonzero entry in its column.
+♢
+The reduced row-echelon form will play an important role later in Sec-
+tion 2.3.3 because it allows us to determine the general solution of a sys-
+tem of linear equations in a straightforward way. Remark (Gaussian Elimination). Gaussian elimination is an algorithm that
+performs elementary transformations to bring a system of linear equations
+into reduced row-echelon form. ♢
+Example 2.7 (Reduced Row Echelon Form)
+Verify that the following matrix is in reduced row-echelon form (the pivots
+are in bold):
+A= 
+0 0 1 0 9
+1 3 0 0 3
+
+0 0 0 1−4
+. (2.49)
+The key idea for finding the solutions of Ax= 0 is to look at the non-
+pivot columns, which we will need to express as a (linear) combination of
+the pivot columns. The reduced row echelon form makes this relatively
+straightforward, and we express the non-pivot columns in terms of sums
+and multiples of the pivot columns that are on their left: The second col-
+umn is 3 times the first column (we can ignore the pivot columns on the
+right of the second column). Therefore, to obtain 0, we need to subtract

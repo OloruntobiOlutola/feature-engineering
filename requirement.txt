@@ -8,3 +8,4 @@ openpyxl
 flask
 memory_profiler
 requests
+colorama
